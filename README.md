@@ -14,17 +14,17 @@ This AI agent is designed to automatically retrieve and extract specific informa
 
 ## Prerequisites
 
-- Python 3.8+
+- Python 3.9+
 - API Keys:
-  - Search API (SerpAPI/ScraperAPI)
-  - LLM API (Groq/OpenAI)
-  - Google Sheets API (optional)
+  - Search API (SerpAPI)
+  - LLM API (Groq)
+  - Google Sheets API 
 
 ## Installation
 
 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/ai-agent-project.git
+git clone https://github.com/rohraharjas/llmscraper.git
 cd ai-agent-project
 ```
 
@@ -36,8 +36,9 @@ pip install -r requirements.txt
 3. Set up environment variables
 - Create a `.env` file with:
   ```
-  SEARCH_API_KEY=your_search_api_key
-  LLM_API_KEY=your_llm_api_key
+  SERP_API_KEY=your_api_key
+  GROQ_API_KEY=your_llm_api_key
+  GSHEETS_API_KEY=your_gsheet_api_key
   ```
 
 ## Usage
@@ -62,8 +63,8 @@ streamlit run app.py
 
 - Dashboard: Streamlit
 - Data Handling: pandas
-- Search API: SerpAPI/ScraperAPI
-- LLM: Groq/OpenAI GPT
+- Search API: SerpAPI
+- LLM: Groq
 - Backend: Python
 - Agents: Langchain
 
